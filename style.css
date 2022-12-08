@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Diplomata+SC&family=Josefin+Sans:wght@500&family=Kdam+Thmor+Pro&family=Mulish:wght@500&family=Oswald&family=Zen+Dots&display=swap');
+.hide {
+    display: none;
+}
+.site-main {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-45deg, #FFB600 0%, #FFAA00 13%, #FF9100 25%, #FF8500 38%, #FF7900 50%, #FF6D00 62%, #FF6000 75%, #FF5400 87%, #FF4800 100%);
+    background-size: 400% 400%;
+    animation: animate 7.5s ease-in-out infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0px;
+}
+.main-item {
+    position: relative;
+    margin: auto;
+    width: 300px;
+    height: 200px;
+    border: solid 1px;
+    border-radius: 20px;
+}
+.item-background {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 200px;
+    font-size: 30px;
+    font-family: "Josefin Sans";
+    background: linear-gradient(-45deg, #FF4800 0%, #FF5400 13%, #FF6000 25%, #FF6D00 38%, #FF7900 50%, #FF8500 62%, #FF9100 75%, #FFAA00 87%, #FFB600 100%);;
+    background-size: 400% 400%;
+    animation: animate 7.5s ease-in-out infinite;
+}
+::selection {
+    background-color: #FFB600;
+    color: black;
+}
+.main-item:hover .item-background {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-45deg, #FF4800 0%, #FF5400 13%, #FF6000 25%, #FF6D00 38%, #FF7900 50%, #FF8500 62%, #FF9100 75%, #FFAA00 87%, #FFB600 100%);;
+    background-size: 400% 400%;
+    position: relative;
+    animation: animate 7.5s ease-in-out infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0px;
+    box-shadow: 2px 2px 2px 2px;
+}
+@keyframes animate{
+    0%{
+      background-position: 0 50%;
+    }
+    50%{
+      background-position: 100% 50%;
+    }
+    100%{
+      background-position: 0 50%;
+    }
+  }
+.main-item:hover .item-hover-text {
+    z-index: 100;
+}
+.main-item:hover {
+    cursor: pointer;
+}
+.item-hover-text {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    vertical-align: middle;
+    line-height: 200px;
+    font-size: 50px;
+    font-family: "Anton";
+    text-align: center;
+}
